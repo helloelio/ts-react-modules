@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2019", "dom"],
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*": ["src/components/*"],
+      "hooks": ["src/hooks"],
+      "api": ["src/api"],
+      "assets/*": ["src/assets/*"],
+      "store/*": ["src/store/*"],
+      "store": ["src/store"],
+      "utils/*": ["src/utils/*"],
+      "styles/*": ["src/styles/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
